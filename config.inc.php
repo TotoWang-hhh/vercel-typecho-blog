@@ -34,14 +34,14 @@ require_once 'Typecho/Common.php';
 Typecho_Common::init();
 
 /** 定义数据库参数 */
-$db = new Typecho_Db('epiz_33244859_typecho', 'typecho_');
+$db = new Typecho_Db('Pdo_Mysql', 'typecho_');
 $db->addServer(array (
   'host' => 'sql108.epizy.com',
   'user' => 'epiz_33244859',
   'password' => '948tt637908',
   'charset' => 'utf8mb4',
   'port' => '3306',
-  'database' => '数据库昵称',
+  'database' => 'epiz_33244859_typecho',
   'engine' => 'MyISAM',
 ), Typecho_Db::READ | Typecho_Db::WRITE);
 Typecho_Db::set($db);
